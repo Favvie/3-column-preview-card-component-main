@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+body {
+  background: #f2f2f2;
+}
+
+.container {
+  margin: 3em 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sedan {
+  background: #e38826;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.sedan button {
+  color: #e38826;
+}
+
+.suv {
+  background: #006970;
+}
+
+.suv button {
+  color: #006970;
+}
+
+.luxe {
+  background: #004241;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.luxe button {
+  color: #004241;
+}
+
+.card {
+  padding: 3em;
+}
+
+.card h1 {
+  color: #f2f2f2;
+  text-transform: uppercase;
+  font-family: 'Big Shoulders Display', cursive;
+  padding: .5em 0px;
+}
+
+.card p {
+  color: rgba(255, 255, 255, 0.75);
+  padding: .5em 0;
+  line-height: 1.7em;
+  font-size: 1em;
+}
+
+.card button {
+  width: 60%;
+  border: none;
+  padding: 1em;
+  border-radius: 5em;
+  background: #f2f2f2;
+  margin-top: 2em;
+}
+
+.card button:hover {
+  background: transparent;
+  color: #f2f2f2;
+  -webkit-box-shadow: inset 0px 0px 0px 2px #f2f2f2;
+          box-shadow: inset 0px 0px 0px 2px #f2f2f2;
+}
+
+@media only screen and (min-width: 480px) {
+  .container {
+    max-width: 400px;
+    margin: 3em auto;
+  }
+}
+
+@media only screen and (min-width: 1040px) {
+  .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 860px;
+  }
+  .container .card h1 {
+    font-size: 2em;
+  }
+  .sedan {
+    border-radius: 10px 0px 0px 10px;
+  }
+  .luxe {
+    border-radius: 0px 10px 10px 0px;
+  }
+  .attribution {
+    display: none;
+  }
+}
+/*# sourceMappingURL=main.css.map */

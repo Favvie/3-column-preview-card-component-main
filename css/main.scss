@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Lexend Deca', sans-serif;
+}
+body {
+    background:hsl(0, 0%, 95%);
+}
+
+.container {
+    margin:3em 2em;
+    display: flex;
+    flex-direction: column;
+}
+.sedan {
+    background: hsl(31, 77%, 52%);
+    border-radius: 10px 10px 0px 0px;
+
+    button{
+        color: hsl(31, 77%, 52%) ;
+    }
+}
+.suv {
+    background:  hsl(184, 100%, 22%);
+    button{
+        color: hsl(184, 100%, 22%) ;
+    }
+}
+.luxe {
+    background: hsl(179, 100%, 13%);
+    border-radius: 0px 0px 10px 10px;
+    button{
+        color: hsl(179, 100%, 13%) ;
+    }
+    
+}
+
+.card {
+    padding: 3em;
+
+    h1{
+     color: hsl(0, 0%, 95%);
+     text-transform: uppercase;
+     font-family: 'Big Shoulders Display', cursive;
+     padding: .5em 0px;
+    }
+
+    p {
+        color: hsla(0, 0%, 100%, 0.75);
+        padding: .5em 0;
+        line-height: 1.7em;
+        font-size: 1em;
+    }
+
+    button {
+        width: 60%;
+        border: none;
+        padding: 1em;
+        border-radius: 5em;
+        background: hsl(0, 0%, 95%);
+        margin-top: 2em;
+    }
+
+    button:hover{
+        background: transparent;
+        color:hsl(0, 0%, 95%);
+        box-shadow:inset 0px 0px 0px 2px hsl(0, 0%, 95%);
+    }
+}
+
+
+@media only screen and (min-width: 480px) {
+    .container {
+        max-width: 400px;
+        margin:3em auto;
+    }
+}
+@media only screen and (min-width:1040px) {
+    .wrapper {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .container {
+        flex-direction: row;
+        max-width: 860px;
+        
+        .card {
+            h1{
+                font-size: 2em;
+            }
+        }
+    }
+
+    .sedan {
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    .luxe {
+        border-radius: 0px 10px 10px 0px;
+    }
+
+    .attribution {
+        display: none;
+    }
+}
